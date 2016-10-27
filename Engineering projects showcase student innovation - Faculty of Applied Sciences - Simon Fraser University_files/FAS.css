@@ -1,0 +1,797 @@
+@font-face {
+    font-family: 'DINProBold';
+    src: url('/content/dam/sfu/commonassets/fonts/din/dinpro-bold-webfont.eot');
+    src: url('/content/dam/sfu/commonassets/fonts/din/dinpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/content/dam/sfu/commonassets/fonts/din/dinpro-bold-webfont.woff') format('woff'),
+         url('/content/dam/sfu/commonassets/fonts/din/dinpro-bold-webfont.ttf') format('truetype'),
+         url('/content/dam/sfu/commonassets/fonts/din/dinpro-bold-webfont.svg#DINProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'DINProRegular';
+    src: url('/content/dam/sfu/commonassets/fonts/din/dinpro-regular-webfont.eot');
+    src: url('/content/dam/sfu/commonassets/fonts/din/dinpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/content/dam/sfu/commonassets/fonts/din/dinpro-regular-webfont.woff') format('woff'),
+         url('/content/dam/sfu/commonassets/fonts/din/dinpro-regular-webfont.ttf') format('truetype'),
+         url('/content/dam/sfu/commonassets/fonts/din/adinpro-regular-webfont.svg#DINProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'DINProMedium';
+    src: url('/content/dam/sfu/commonassets/fonts/din/dinpro-medium-webfont.eot');
+    src: url('/content/dam/sfu/commonassets/fonts/din/dinpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/content/dam/sfu/commonassets/fonts/din/dinpro-medium-webfont.woff') format('woff'),
+         url('/content/dam/sfu/commonassets/fonts/din/dinpro-medium-webfont.ttf') format('truetype'),
+         url('/content/dam/sfu/commonassets/fonts/din/dinpro-medium-webfont.svg#DINProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+  font-family: 'DINWebLight';
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-Light.eot');
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-Light.woff') format('woff');
+  }
+
+@font-face {
+  font-family: 'DINWeb';
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb.eot');
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb.woff') format('woff');
+  }
+
+@font-face {
+  font-family: 'DINWebBold';
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-Bold.eot');
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-Bold.woff') format('woff');
+  }
+
+@font-face {
+  font-family: 'DINWebMedium';
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-Medium.eot');
+   src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'DINWebBlack';
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-Black.eot');
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-Black.woff') format('woff');
+  }
+
+@font-face {
+  font-family: 'DINWebLightItalic';
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-LightIta.eot');
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-LightIta.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  }
+
+@font-face {
+	font-family: 'DINWebItalic';
+	src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-Ita.eot');
+	src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-Ita.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+	}
+
+@font-face {
+  font-family: 'DINWebMediumItalic';
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-MediumIta.eot');
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-MediumIta.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  }
+
+@font-face {
+  font-family: 'DINWebBoldItalic';
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-BoldIta.eot');
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-BoldIta.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  }
+
+@font-face {
+  font-family: 'DINWebBlackItalic';
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-BlackIta.eot');
+  src: url('/content/dam/sfu/commonassets/fonts/din/DINWeb-BlackIta.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  }
+
+/*--- type ----*/
+
+.main_content h1, h1 a {
+    font: 1.50em/1em "DinWebBold", sans serif;
+}
+
+.main_content h2, h2 a {
+    font: 1.188em/1em "DinWebMedium", sans-serif;
+}
+
+.main_content h3, h3 a {
+    font: .938em/1em "DinWeb", sans-serif;
+}
+
+.main_content h4, h4 a{
+	font: .750em/1em "DinWebMedium",sans-serif;
+	padding-top:0;
+}
+
+.main_content h5, h5 a{
+	padding-top:0;
+}
+
+div.noMarginH2 h2{
+	margin-top: 0;
+}
+
+
+/*------ Homepage carousel ------*/
+.custom-carousel {
+    height: 300px;
+    width: 785px;
+    }
+
+.custom-carousel .cq-carousel-banner-item img {
+    height: 300px;
+    width: 534px;
+    }
+    
+.custom-carousel .cq-carousel-banner-item {
+    background-color: #3B3B3B;
+    height: 300px;
+    width: 785px;
+    }
+    
+.custom-carousel .cq-carousel-banners h3 {
+    color: #FFFFFF;
+    display: inline;
+    font: 17px/1.25em "DINProBold",sans-serif;
+    margin: 5% 4% 11% 3%;
+    position: absolute;
+}
+.custom-carousel .cq-carousel-banners p {
+    color: white;
+    display: inline;
+    font: 12px/1.5em "DiNPro",sans-serif;
+    margin: 118px 0 0 24px;  
+	position: absolute;
+    width: 27%;
+}
+    
+.custom-carousel .cq-carousel-banners p a {
+    color: #878686;
+    margin: 4% 0;
+    display: block;
+    }
+    
+.custom-carousel .cq-carousel-banner-switches-bc {
+    bottom: 0;
+    margin: 7% 0% 0% 24%;
+    }
+
+/**------ Homepage Style Buttons and Title ------**/
+
+
+.homepg-buttons {
+    float: left;
+    margin: 0;
+    width: 100%;
+   }
+
+.homepg-buttons ul {
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.homepg-buttons ul li {
+    border: 1px solid #D7D7D7;
+    float: left;
+    margin: 0.5%;
+    /*width: 18%;*/
+    height: 18em;
+    background: none;
+    padding:0;
+    /*min-width: 160px;*/
+    
+}
+
+.homepg-buttons ul li img {
+    border-top: 7px solid #3a3a3a;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    transition: 1.2s;
+   }
+
+.homepg-buttons ul li a img:hover {
+    border-top: 7px solid #B5111B;
+    margin: 0;
+    padding: 0;
+    opacity: 0.7;
+}
+
+.homepg-buttons ul li h4 a {
+    color: #3B3B3B;
+    font: 13px/1em "DINProBold",sans-serif;
+    width: 90%;
+    display: block;
+    width: 100%;
+    padding: 0 4% 0% 6%;
+    }
+    
+.homepg-buttons ul li h5 a {
+    color: #3B3B3B;
+    font: 11px/1.5em sans-serif;
+    padding: 0 4% 8% 6%;
+    width: 100%;
+    display: block;
+    }
+    
+.homepg-buttons ul li p {
+    line-height: 1.25;
+    margin-top: 0;
+    width: 100%;
+    padding: 0 0 4% 0;
+    }
+    
+.homepg-title h1 {
+    font: 23px/1em "DINProBold",sans-serif;
+    margin: 0;
+    }
+    
+.homepg-title h3 {
+    color: grey;
+    font: .875em/1.55em "DINProRegular",sans-serif;
+    margin-top: 5%;
+    padding: 0;
+}
+
+.homepg-buttons .text ul li{
+  background: none;
+  padding:0px;
+  padding-top:0px;
+}
+
+/**------ Modified Search Widget ------**/
+div.searchwidgetHomePg form {
+    margin: 1% 0 1% 36%;
+    width: 59%;
+    }
+    
+div.searchwidgetHomePg p {
+    font: 12px/1.55em "DINProRegular",sans-serif;
+    margin: 3% 0 0 36%;
+    width: 59%;
+    }
+	
+div.searchwidgetHomePg form input.submit {
+	float: right;
+	}		
+		
+	
+		
+		
+/*------ Contact Us Page ------*/
+div.contact-style {
+  clear:both;
+}
+
+div.contact-style h2 {
+    color: #505050;
+    font: 1.063em/1em "DinWeb",sans-serif;
+    padding: 0;
+    margin: 0;
+    }
+
+div.contact-style h3 {
+	color: #545454;
+	font: .813em/1em "DinWebLight",sans serif;
+	padding: 0;
+	margin: 1% 0 3% 0;
+    }
+
+/*------display link boxes- Current Student and Prospective Student Page------*/
+div.displayLink h3 {
+  font: .750em/0em "DinWebMedium",sans-serif;
+  margin-bottom: 9px;
+  padding: 0;
+    }
+    
+div.displayLink h3 a {
+	border: 1px solid #CCCCCC;
+  display: block;
+  font: 1.15em/0.6em "DinWebMedium",sans-serif;
+  height: 19px;
+  padding: 6% 6% 7%;
+  text-decoration: none;
+  margin:1em 0em;
+  box-shadow: 0 -8px 0 #3A3A3A;
+  color:#4b4b4b;
+}
+    
+div.displayLink h3 a:hover {
+  transition:1.2s;
+  border: 1px solid #CCCCCC;
+  box-shadow: 3px 3px 7px #c2c2c2;
+  box-shadow: 0 -8px 0 #B5111B, 0 0 6px #ddd;
+}
+    
+div.displayLink h3 a:visited {
+  border: 1px solid #CCCCCC;
+
+}
+
+div.displayLink ul {
+  margin-bottom:2em;
+}
+
+div.displayLink ul li{
+  background: url("/content/dam/sfu/images/common/bullet_red.gif") no-repeat scroll 0px 11px transparent;
+  padding-left:15px;
+
+} 
+    
+    
+/*newsfeed display list option----*/
+
+.newsLead{
+  padding-top: 0.1em;
+}
+
+ul.newsFeed li {
+    clear: left;
+    margin: 0 0 10px;
+    padding: 20px 10px 0 0;
+}
+ul.newsFeed div.newsThumbnail {
+    /*border: 1px solid #CCCCCC;*/
+    float: left;
+    margin: 0 20px 10px 0;
+    /*padding: 4px;*/
+}
+ul.newsFeed div.newsThumbnail a {
+    display: block;
+    height: 100%; /* 75 px*/
+    width: 100%; /* 75 px*/
+}
+ul.newsFeed div.newsLead h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 0 6px;
+}
+ul.newsFeed div.newsLead h3 a {
+    color: #313428;
+    margin: 0.9em 0 0;
+    padding: 0;
+}
+ul.newsFeed div.newsLead h3 a:hover {
+    color: #B5111A;
+    text-decoration: none;
+}
+ul.newsFeed span.newsMeta {
+    color: #777777;
+    font-size: 10px;
+}
+ul.newsFeed span.newsComments {
+	display: none;
+
+}
+ul.newsFeed div.newsLead p a {
+    color: #B5111A;
+}
+ul.newsFeed div.newsLead p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/*------ right hand side navigation with Text Component ------*/
+.secondaryNav h2 {
+    padding-top: 2%;
+    text-align: right;
+    font-size: .938em;        
+    }
+        
+.secondaryNav h2 a{
+	font: 1.125em "DinProBold", Sans-serif;
+	color: #B5111B;
+	}            
+	
+.secondaryNav ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    }
+    
+.secondaryNav ul li {
+    border-bottom: 1px solid #e8e8e8;
+    font: .688em/1em, Sans-serif;
+    margin-left: 19%;
+    background:none;
+    }    
+
+.secondaryNav ul li a {
+    display: block;
+    padding: 3% 0%;
+    text-decoration: none;
+}
+
+.secondaryNav ul li:last-child{
+	border-bottom:none;
+}
+
+.secondaryNav ul li:hover{
+  transition: 1.2s;
+	background-color:#F6F6F6;
+}
+
+.negativeMargin{
+  margin-top:-50px;
+}
+
+.negativeColumn{
+  margin-top:-2em;
+}
+
+/*------ right hand side navigation with List Component------*/
+
+ul.default li{
+  margin-bottom:0px;
+  padding-left:0px;
+}
+
+ul.secondaryNav {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    }
+    
+ul.secondaryNav li {
+    border-bottom: 1px solid #E8E8E8;
+    background: none;
+    /*margin:0 5% 0 19%;*/      
+    }
+    
+ul.secondaryNav li a {
+	display: block;
+    text-decoration: none;
+    padding: 3% 0%;
+    text-align:right;
+    }
+
+ul.secondaryNav li a:hover{
+	background-color:#F6F6F6;
+  transition: 1.2s;
+	}
+
+ul.secondaryNav li p {
+    padding: 0;
+    margin: 0;
+}
+
+ul.secondaryNav li:last-child{
+	border-bottom:none;
+}
+
+.imageMargin{
+  margin-top: 1em;
+}
+
+/* ------- Titling for the Alumni Section -------*/
+
+div.intro-title h3 {
+    margin: 0;
+    padding: 0;
+    }
+
+div.intro-title h3 a {
+    font: .938em/1em "DinWebMedium",sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+div.intro-title h4 {
+    font: .705em/1.25em "DinWeb",sans-serif;
+    margin: 5px 0 13px 0;
+    padding: 0;
+}
+
+/* ------- Titling for the Timeline Section -------*/
+
+div.timeline-title h3, h3 a {
+    font: 1em/1em "DinWeb",sans-serif;
+    padding-bottom: 0;
+    }
+
+
+/* -------- new list style ----------*/
+ul.newsList li a {
+    font: 14px/1em "DinWeb", sans-serif;
+    color: #313428;    
+    display: block;
+}
+
+ul.newsList div.newsThumbnail a {
+    display: block;
+    height: 75px;
+    width: 75px;
+    }
+
+/* ------- additional styles -------- */
+
+.ruledThin{
+  border-top: 1px solid #E8E8E8;
+}
+
+.toggle{
+ background: url("/content/dam/sfu/images/icons/content-toggle-icon.png") no-repeat scroll 0 4px transparent
+}
+
+.toggleContent{
+  border-left:none;
+}
+
+.textRight{
+  text-align: right;
+}
+
+.custom.flex-viewport{
+  max-height: 400px;
+}
+
+.custom-heading h4{
+  background-color: #3d3835;
+  color: #FFFFFF;
+  padding: 0.8em 1em 0.6em 0.6em;
+}
+
+.custom-margin{
+  margin-top:-3em;
+}
+
+.home-button .image {
+     float: none;
+     width: 100%;
+     transition:1s;
+     background-color: #fff;
+}
+
+.home-button .image:hover {
+    opacity: .75;
+    width: 100%;
+    background-color: #fff;
+}
+
+.home-button {
+     border-right: 1px solid #CCCCCC;
+     border-left: 1px solid #CCCCCC;
+     border-bottom: 1px solid #CCCCCC;
+     box-shadow: 0px -8px 0px #3A3A3A;
+     transition: all 1.2s ease 0s ;
+     min-height: 20em;
+}
+
+.home-button:hover {
+     border-right: 1px solid #bfbfbf;
+     border-left: 1px solid #bfbfbf;
+     border-bottom: 1px solid #bfbfbf;
+     box-shadow: 0px -8px 0px #B5111B, 0px 0px 10px #ddd;
+}
+
+.home-button .text {
+     margin-bottom: -0.8em;
+}
+
+.home-button .text h4 a {
+     color: #3B3B3B;
+     display: block;
+     font: 1.063em/1em "DINProBold",sans-serif;
+     padding: 0px 4% 0px 6%;
+     width: 100%;
+}
+
+.home-button .text h4 a:hover {
+     color: #3D3935;
+}
+
+.home-button .text h5 a {
+     color: #3B3B3B;
+     display: block;
+     font: 1em/1.5em "DinProRegular" ,sans-serif;
+     padding: 0 4% 8% 6%;
+     width: 100%;
+}
+
+.video-margin{
+  margin-top:1em;
+}
+
+/* --------- columns ----------- */
+
+
+div.cq-colctrl-lt8-c0 {
+    margin-right: 2.666%;
+    padding: 0;
+    width: 23%;
+}
+div.cq-colctrl-lt8-c1 {
+    margin-right: 2.666%;
+    padding: 0;
+    width: 23%;
+}
+div.cq-colctrl-lt8-c2 {
+    clear: none;
+    padding:0;
+    margin-right: 2.666%;
+    width: 23%;
+}
+div.cq-colctrl-lt8-c3 {
+    margin-right: 0;
+    padding: 0;
+    width: 23%;
+  }
+  .wideCarousel .flex-viewport{
+    /*  max-height:258px; */
+  }
+
+  .carousel .wideCarousel .carousel-text {
+    margin-top:0%;
+    font-size:.938em;
+  }
+  .homepg-title h1{
+    margin-top:-.3em;
+  }
+
+/* --------- media queries ----------- */
+
+@media (max-width: 1500px) {
+  .wideCarousel .flex-viewport{
+   max-height: 600px;
+  }
+  .wideCarousel .carousel-text{
+    margin-top: 0%;
+  }
+  .wideCarousel .carousel .news h3{
+    font-size: 1.5em;
+  }
+  .wideCarousel .carousel .news .carousel-text{
+    margin-top: 0%;
+  }
+  .wideCarousel .carousel .news .carousel-text p{
+    font-size: .757143em;
+  }
+  .home-button {
+    min-height: 17.7em;
+  }
+}
+
+@media (max-width: 980px) {
+  .wideCarousel .flex-viewport {
+    max-height: 600px;  
+  }
+  .carousel .news h3{
+    font-size: 1.75em;
+  }
+  .carousel .news .carousel-text p { 
+    font-size: .857143em;
+  }
+  .home-button {
+    min-height: 17.6em;
+  }
+}
+
+@media (max-width: 768px) {
+  /*.homepg-buttons ul{
+    height:17em;
+  } */
+
+  /** for prospective students **/
+  .programs div.cq-colctrl-lt2-c0{
+    width: 33%;
+  }
+  .programs div.cq-colctrl-lt2-c1{
+    width: 33%;
+
+  }
+  .programs div.cq-colctrl-lt2-c2{
+    clear: none;
+    width: 33%;
+  }
+  .custom-columns .cq-colctrl-lt2-c0{
+    width:100%;
+  }
+  .custom-columns .cq-colctrl-lt2-c2{
+    clear:none;
+  }
+
+
+
+}
+
+@media (max-width: 480px) {
+  /*div.parsys_column{
+    width: 101%;
+  }*/
+
+  div.cq-colctrl-lt8-c0{
+    margin-right:5%;
+    width:47.5%;
+  }
+
+  div.cq-colctrl-lt8-c1{
+    width:47.5%;
+    margin-right:0%;
+  }
+
+  div.cq-colctrl-lt8-c2{
+    margin-top:7%;
+    margin-right:5%;
+    width:47.5%;
+  }
+
+  div.cq-colctrl-lt8-c3{
+    margin-top:7%;
+    width:47.5%;
+    margin-right:0%;
+  }
+    /** for prospective students **/
+  .programs div.cq-colctrl-lt2-c0{
+    width: 100%;
+  }
+  .programs div.cq-colctrl-lt2-c1{
+    width: 100%;
+
+  }
+  .programs div.cq-colctrl-lt2-c2{
+    clear: none;
+    width: 100%;
+  }
+  .custom-heading{
+    margin-top:-2em;
+    margin-bottom:2em;
+  }
+  .secondaryNav ul li {
+  margin-left:0%;
+  }
+  .home-button {
+    min-height: 17.7em;
+  }
+  .negativeColumn{
+    margin-top:0em;
+  }
+  .largeImage .image{
+    width:100%;
+    padding-bottom:2em;
+  }
+  ul.newsFeed li{
+    padding-top:1.5em;
+    padding-bottom:.8em;
+    border-top:1px solid #ccc;
+  }
+  .image{
+    overflow: hidden;
+  }
+
+  .crop{
+    height: 100%;
+    margin-bottom:-70px;
+  }
+ /* .textimage .image{
+    overflow:hidden;
+  }
+  .image img, .textimage .image img{
+    margin-bottom:-120px;
+
+  }
+  .largeItem .image{
+    margin-bottom:2em;
+  }*/
+}
